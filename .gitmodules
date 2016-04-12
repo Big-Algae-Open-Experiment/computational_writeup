@@ -1,0 +1,3 @@
+[submodule "bigalgae"]
+	path = bigalgae
+	url = https://github.com/Big-Algae-Open-Experiment/bigalgae.git
