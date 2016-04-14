@@ -64,6 +64,8 @@ p <- p + geom_errorbarh(aes(xmax=mean_prenorm+sd_prenorm, xmin=mean_prenorm-sd_p
 p <- p + facet_grid(points_sampled ~ colour, scales='free_x')
 p <- p + scale_colour_manual(values=rev(hue_pal()(3)))
 p <- p + theme(legend.position='none')
+p <- p + labs(x = 'Colour Intensity Before Normalization',
+    y='Colour Intensity After Normalization')
 png('figures/prenorm_vs_norm.png', height=480, width=960, res=100)
 print(p)
 dev.off()
