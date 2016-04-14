@@ -12,7 +12,7 @@ Location information is collected to allow the environmental conditions experien
 After validating a user's email address upload and experiment validation codes are sent to the user.
 These codes are required to upload data and register new experiments for a particular reactor respectively.
 Having a form of validation such as this lowers the risk of abuse significantly, without negatively affecting the usability of the site.
-When uploading an image cell count data and optical density measurements may also be uploaded, with dry mass information being uploaded retropectively.
+When uploading an image cell count data and optical density measurements may also be uploaded, with dry mass information being uploaded retrospectively.
 During the image upload process, the image enters the image analysis pipeline to determine whether it contains a calibration window and an Arduino controlled time display (Section 2 - Algorithm).
 Presence of the calibration window is essential for the upload to be successful, while the presence of the time display is not.
 The online platform was created using a Python web framework called Flask, hosted using DigitalOcean cloud infrastructure and made use of Ansible to automate server management tasks.
@@ -87,7 +87,7 @@ To facilitate the use of the website to track algal growth over time, options to
 These graphing options will make use of D3, a JavaScript visualization library.
 The advantage of client side visualization is reduced server side computation as well as responsive, dynamic plots.
 The plot will allow the user to plot different measures of algal density (optical density measurements, dry mass and cell count) against time.
-The time measurement will be determined in three ways, with the order of presidence determined by their differing levels of accuracy.
+The time measurement will be determined in three ways, with the order of precedence determined by their differing levels of accuracy.
 The most accurate method of time elapsed since the start of the experiment is the Arduino based time.
 If the image analysis pipeline does not detect a time window in the photo, and EXIF data is available, the date and time the photo was taken is taken from the photo's metadata.
 The disadvantage of using the metadata is that the internal date and time set on the phone may be incorrect or set to a different time zone.
